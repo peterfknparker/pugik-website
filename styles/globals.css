@@ -1,16 +1,21 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Poppins-Regular.ttf");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 600;
+  src: url("/fonts/Poppins-Bold.ttf");
 }
 
-* {
-  box-sizing: border-box;
+.diagonal-clip {
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 90%);
 }
